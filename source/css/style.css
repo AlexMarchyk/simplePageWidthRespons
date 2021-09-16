@@ -1,18 +1,19 @@
-/*FONTS*/
+/*Шрифт из GF*/
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600|Raleway:400,600&display=swap');
 
-/* VARIABLES CSS */
+/* Переменные  */
+
 /*Header*/
 :root{
     --header-height: 3rem;
 }
 /*Colores*/
 :root{
-    --color-first: #EA4C89;
-    --color-secondary: #1D2063;
+    --color-first: #72d323;
+    --color-secondary: #3c23cc;
     --color-text: #fff; 
 }
-/*Fuente y tipografia*/
+/*Переменные для шрифта*/
 :root{
     --heading-font: 'Raleway';
     --body-font: 'Open Sans';
@@ -36,7 +37,7 @@
     --z-modal: 1000;
 }
 
-/* BASE */
+/* Обнуление */
 *,::before,::after{
     box-sizing: border-box;
 }
@@ -65,7 +66,7 @@ img{
     height: auto;
 }
 
-/* LAYAOUT */
+/* Основная часть грида */
 .bd-grid{
     display: grid;
     grid-template-columns: 100%;
@@ -81,7 +82,7 @@ img{
     left: 0;
     background-color: var(--color-secondary);
 }
-/* COMPONENTS */
+/* Кнопка */
 .button{
     display: inline-block;
     padding: .5rem 1.5rem;
@@ -95,7 +96,7 @@ img{
     transition: .5s;
 }
 
-/* PAGES */
+/* Страница */
 .home{
     height: calc(100vh - var(--header-height));
 }
@@ -137,7 +138,7 @@ img{
     cursor: pointer;
 }
 
-/*Aparece menu*/
+/*Вылетающее меню  с классом SHOW для JS*/
 .show{
     right: 0;
 }
@@ -178,7 +179,7 @@ img{
     padding: 2rem;
 }
 
-/*MEDIA QUERIES*/
+/*медиа запросы для респонса*/
 @media screen and (min-width: 768px){
     body{
         margin: 0;
